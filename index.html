@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="visitor-counter">
+    <p>Website visits: <span id="visitCount">0</span></p>
+</div>
+
+<body>
+ <div id="loader">
+    <div class="spinner"></div>
+    <p>Loading my website...</p>
+</div>   
+
+ <header>
+    <h1>Welcome to My Website!</h1>
+    <p>I am learning web development.</p>
+   <div class="greeting-box">
+    <input
+        type="text"
+        id="visitorName"
+        placeholder="Enter your name"
+    >
+
+    <button id="greetButton">Say Hello</button>
+
+    <p id="greetingMessage"></p>
+</div> 
+<div class="clock-box">
+    <p id="clock"></p>
+</div>
+
+    <button id="themeButton">🌙 Dark Mode</button>
+</header> 
+  <div class="color-picker">
+    <label for="themeColor">Choose an accent color:</label>
+
+    <input type="color" id="themeColor" value="#007bff">
+</div>
+
+<nav>
+  <div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search this website..."
+    >
+
+    <button id="searchButton">Search</button>
+</div>
+
+<p id="searchMessage"></p>  
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+<a href="#social">Social Media</a>
+
+    <main>
+     <section id="quotes">
+    <h2>Inspirational Quotes 💡</h2>
+
+    <p id="quoteText">
+        Click the button to discover a quote!
+    </p>
+
+    <button id="quoteButton">New Quote</button>
+</section>   
+     <section id="calculator">
+    <h2>My Calculator 🧮</h2>
+
+    <input type="number" id="number1" placeholder="First number">
+
+    <select id="operator">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (×)</option>
+        <option value="/">Division (÷)</option>
+    </select>
+
+    <input type="number" id="number2" placeholder="Second number">
+
+    <button id="calculateButton">Calculate</button>
+    <button id="clearButton">Clear</button>
+
+    <p id="calculatorResult">Result: </p>
+</section>   
+  <section id="login">
+    <h2>Member Login Demo</h2>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Enter username"
+    >
+
+    <input
+        type="password"
+        id="demoPassword"
+        placeholder="Enter demo password"
+    >
+
+    <button id="loginButton">Login</button>
+
+    <p id="loginMessage"></p>
+</section>      
+     <footer>
+    <p>&copy; <span id="year"></span> My Website. All rights reserved.</p>
+    <p>Built with HTML, CSS, and JavaScript.</p>
+</footer> 
+  <button id="backToTop" title="Back to top">⬆️ Top</button>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome! This is my first website.</p>
+            <button id="welcomeButton">Click Me</button>
+        </section>
+
+     <section id="about">
+    <h2>About Me</h2>
+
+    <img src="profile.jpg" alt="My profile picture" class="profile-picture">
+
+    <p>Hello! I am a Computer Science student.</p>
+
+    <p>
+        I am learning web development and want to become
+        a professional software developer.
+    </p>
+</section>   
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>My First Website</h3>
+        <p>A simple website built with HTML and CSS.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Calculator</h3>
+        <p>A calculator project I plan to build using JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>A project I plan to develop to manage student information.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question? Send me a message!</p>
+    <div class="email-box">
+    <p>Email: yourname@example.com</p>
+    <button id="copyEmailButton">📋 Copy Email</button>
+    <p id="copyMessage"></p>
+</div>
+
+    <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" rows="5" placeholder="Write your message" required>
+ </textarea>
+
+<p>Characters: <span id="charCount">0</span></p>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formResponse"></p>
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+<div id="progressBar"></div>
+</html>

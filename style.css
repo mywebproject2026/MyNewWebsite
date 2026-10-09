@@ -1,0 +1,466 @@
+* :root {
+    --accent-color: #007bff;
+}
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f4f6f8;
+}
+
+header {
+    background: #145da0;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+nav {
+    background: #123;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+}
+
+nav a:hover {
+    color: #80d4ff;
+}
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 16px;
+}
+
+section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 5px;
+    background: #145da0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0e477b;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #145da0;
+}
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question? Send me a message!</p>
+
+    <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" rows="5" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formResponse"></p>
+</section>
+body.dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode section {
+    background: #222;
+    color: #f1f1f1;
+}
+
+body.dark-mode .project-card {
+    background: #333;
+    color: #f1f1f1;
+}
+
+body.dark-mode .project-card h3 {
+    color: #80d4ff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background: #333;
+    color: white;
+    border-color: #666;
+}
+
+body.dark-mode #formResponse {
+    color: #80d4ff;
+}
+/* Responsive design for mobile phones */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    #contactForm button {
+        width: 100%;
+    }
+}
+footer {
+    background: #123;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+#backToTop {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: #145da0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background: #0e477b;
+}
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-links a {
+    background: #145da0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #0e477b;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.search-container input {
+    width: 70%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#searchMessage {
+    text-align: center;
+    font-weight: bold;
+}
+
+body.dark-mode .search-container input {
+    background: #333;
+    color: white;
+    border-color: #666;
+}
+
+@media screen and (max-width: 600px) {
+    .search-container {
+        flex-wrap: wrap;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #145da0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loader.hidden {
+    display: none;
+}
+
+body.dark-mode #loader {
+    background: #121212;
+    color: white;
+}
+.greeting-box {
+    margin-top: 20px;
+}
+
+.greeting-box input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#greetingMessage {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.clock-box {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #007bff;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background-color: #00c853;
+    z-index: 2000;
+}
+.visitor-counter {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.email-box {
+    margin-top: 20px;
+}
+
+#copyEmailButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copyEmailButton:hover {
+    background-color: #0056b3;
+}
+#charCount {
+    font-weight: bold;
+    color: #007bff;
+}
+#login input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 300px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#calculator input,
+#calculator select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calculateButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculateButton:hover {
+    background-color: #0056b3;
+}
+#calculator {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#calculator input,
+#calculator select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#calculateButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#calculatorResult {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#clearButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clearButton:hover {
+    background-color: #b02a37;
+}
+#quotes {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#quoteText {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+#quoteButton {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.color-picker {
+    margin: 20px 0;
+}
+
+.color-picker input {
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+}
