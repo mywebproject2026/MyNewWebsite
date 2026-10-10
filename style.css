@@ -464,3 +464,13 @@ body.dark-mode #loader {
     height: 35px;
     cursor: pointer;
 }
+/* Profile picture */
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #2563eb;
+}
