@@ -489,3 +489,17 @@ body.dark-mode #loader {
     margin: 20px auto;
     border: 5px solid #2563eb;
 }
+.cv-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #198754;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cv-button:hover {
+    background-color: #146c43;
+}
