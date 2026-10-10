@@ -23,6 +23,21 @@ header {
 nav {
     background: #123;
     text-align: center;
+   .welcome-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #145da0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.welcome-button:hover {
+    background-color: #0b3d6e;
+} 
     padding: 14px;
 }
 
