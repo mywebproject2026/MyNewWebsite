@@ -259,3 +259,11 @@ themeColor.addEventListener("input", function () {
 
     localStorage.setItem("accentColor", selectedColor);
 });
+// Hide the loading screen after the page loads
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+        loader.style.display = "none";
+    }
+});
